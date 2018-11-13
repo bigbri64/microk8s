@@ -40,6 +40,8 @@ apps:
     command: microk8s-enable.wrapper
   disable:
     command: microk8s-disable.wrapper
+  status:
+    command: microk8s-status.wrapper
   config:
     command: microk8s-config.wrapper
   reset:

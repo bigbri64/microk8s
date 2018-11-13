@@ -2,7 +2,7 @@
 
 set -eu
 
-KUBECTL=/snap/bin/microk8s.kubectl
+KUBECTL="$SNAP/kubectl --kubeconfig=$SNAP/client.config"
 
 clean_cluster() {
   echo "Calling clean_cluster"
